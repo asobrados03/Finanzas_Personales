@@ -6,7 +6,7 @@ Este es un proyecto de Android desarrollado en Kotlin usando la libreria Jetpack
 - **Gestión de ingresos y gastos:** Registra tus transacciones diarias.
 - **Informes detallados:** Visualiza gráficos y estadísticas de tus finanzas.
 - **Categorías personalizables:** Clasifica tus ingresos y gastos según tus necesidades.
-- **Recordatorios:** Establece alertas para tus pagos importantes.
+- **Presupuestos:** Establece presupuestos para administrar el gasto por categoría, mes y año.
 
 ## Estructura del proyecto
 
@@ -24,7 +24,7 @@ PlanificadorFinanciero/
 
 ## Requisitos previos
 
-- **Android Studio Flamingo o superior**.
+- **Android Studio Koala o superior**.
 - **JDK 11 o superior**.
 - Gradle 8.0 o superior.
 
