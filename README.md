@@ -1,6 +1,6 @@
 # Finanzas Personales
 
-Este es un proyecto de Android desarrollado en Kotlin usando la libreria Jetpack Compose, diseñado para ayudarte a gestionar tus finanzas personales de manera eficiente. Es mi práctica final para la asignatura Plataformas Software Móviles
+Este es mi proyecto final de la asignatura Plataformas Software Móviles de Android desarrollado en Kotlin usando la libreria Jetpack Compose, diseñado para ayudarte a gestionar tus finanzas personales de manera eficiente.
 
 ## Características principales
 - **Gestión de ingresos y gastos:** Registra tus transacciones diarias.
