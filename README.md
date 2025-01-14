@@ -2,7 +2,7 @@
 
 Este es mi proyecto final de la asignatura Plataformas Software Móviles del curso académico 2024-2025, de Android desarrollado en Kotlin usando la librería Jetpack Compose. Está diseñado para ayudarte a gestionar tus finanzas personales de manera eficiente. Implementa la arquitectura MVVM (Model-View-ViewModel) junto con el patrón Repository para garantizar un diseño modular, escalable y fácilmente mantenible.
 
-## Esquema de la arquitectura realizada
+## Esquema de la arquitectura implementada
 
 ![Esquema MVVM](https://github.com/user-attachments/assets/4b04e5ad-6ffe-4735-945e-1ecd0cdea607)
 
