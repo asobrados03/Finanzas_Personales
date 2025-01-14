@@ -34,25 +34,25 @@ Este es mi proyecto final de la asignatura Plataformas Software Móviles de Andr
 ```mermaid
 erDiagram
     Transaccion {
-        int id PK
-        string tipo "Ingreso o Gasto"
-        float monto
-        date fecha
+        long id PK
+        enum tipo "Ingreso, Gasto"
+        double monto
+        long fecha
         string descripcion
-        int categoriaId FK
+        long categoria FK
     }
     
     Categoria {
-        int id PK
+        long id PK
         string nombre
-        string tipo "Ingreso o Gasto"
+        enum tipo "Ingreso, Gasto"
     }
     
     Presupuesto {
-        int id PK
-        int categoriaId FK
-        float limiteMensual
-        float gastoActual
+        long id PK
+        long categoria FK
+        double limiteMensual
+        double gastoActual
     }
 
     Transaccion ||--o{ Categoria : "pertenece a"
