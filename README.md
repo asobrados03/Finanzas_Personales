@@ -101,7 +101,7 @@ PlanificadorFinanciero/
 ## Tecnologías utilizadas
 
 - **Kotlin:** Lenguaje principal del desarrollo.
-- **Jetpack Components:** LiveData, ViewModel, Room, y más.
+- **Jetpack Components:** Flow, ViewModel, Room, y más.
 - **Material Design:** Interfaz moderna y accesible.
 - **Gradle KTS:** Configuración del sistema de construcción en Kotlin.
 
