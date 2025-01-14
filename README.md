@@ -8,6 +8,57 @@ Este es mi proyecto final de la asignatura Plataformas Software Móviles de Andr
 - **Categorías personalizables:** Clasifica tus ingresos y gastos según tus necesidades.
 - **Presupuestos:** Establece presupuestos para administrar el gasto por categoría, mes y año.
 
+## **Base de datos local con Room**
+
+### Tablas/Entidades que contiene la Base de Datos:
+
+1. **Tabla de transacciones:**
+    - `id`: ID único.
+    - `tipo`: "Ingreso" o "Gasto".
+    - `monto`: Cantidad de dinero.
+    - `categoría`: Relación con la tabla de categorías.
+    - `fecha`: Fecha de la transacción.
+    - `descripción`: Detalle opcional.
+2. **Tabla de categorías:**
+    - `id`: ID único.
+    - `nombre`: Nombre de la categoría (Comida, Transporte, etc.).
+    - `tipo`: "Ingreso" o "Gasto" (para limitar qué categorías se muestran según el tipo de transacción).
+3. **Tabla de presupuestos:**
+    - `id`: ID único.
+    - `categoría`: Relación con la tabla de categorías.
+    - `límite_mensual`: Presupuesto asignado para la categoría.
+    - `gasto_actual`: Gastos acumulados en la categoría este mes.
+
+### Diagrama Entidad-Relación de la Base de Datos
+
+```mermaid
+erDiagram
+    Transaccion {
+        int id PK
+        string tipo "Ingreso o Gasto"
+        float monto
+        date fecha
+        string descripcion
+        int categoriaId FK
+    }
+    
+    Categoria {
+        int id PK
+        string nombre
+        string tipo "Ingreso o Gasto"
+    }
+    
+    Presupuesto {
+        int id PK
+        int categoriaId FK
+        float limiteMensual
+        float gastoActual
+    }
+
+    Transaccion ||--o{ Categoria : "pertenece a"
+    Presupuesto ||--o{ Categoria : "define límite para"
+```
+
 ## Estructura del proyecto
 
 ```
