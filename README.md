@@ -1,6 +1,10 @@
 # Finanzas Personales
 
-Este es mi proyecto final de la asignatura Plataformas Software Móviles de Android desarrollado en Kotlin usando la libreria Jetpack Compose, diseñado para ayudarte a gestionar tus finanzas personales de manera eficiente.
+Este es mi proyecto final de la asignatura Plataformas Software Móviles del curso académico 2024-2025, de Android desarrollado en Kotlin usando la librería Jetpack Compose. Está diseñado para ayudarte a gestionar tus finanzas personales de manera eficiente. Implementa la arquitectura MVVM (Model-View-ViewModel) junto con el patrón Repository para garantizar un diseño modular, escalable y fácilmente mantenible.
+
+## Esquema de la arquitectura realizada
+
+![Esquema MVVM](https://github.com/user-attachments/assets/4b04e5ad-6ffe-4735-945e-1ecd0cdea607)
 
 ## Características principales
 - **Gestión de ingresos y gastos:** Registra tus transacciones diarias.
@@ -18,7 +22,7 @@ Este es mi proyecto final de la asignatura Plataformas Software Móviles de Andr
     - `monto`: Cantidad de dinero.
     - `categoría`: Relación con la tabla de categorías.
     - `fecha`: Fecha de la transacción.
-    - `descripción`: Detalle opcional.
+    - `descripción`: Detalle acerca de la transacción.
 2. **Tabla de categorías:**
     - `id`: ID único.
     - `nombre`: Nombre de la categoría (Comida, Transporte, etc.).
@@ -76,7 +80,7 @@ PlanificadorFinanciero/
 ## Requisitos previos
 
 - **Android Studio Koala o superior**.
-- **JDK 11 o superior**.
+- **JDK 11 o superior (JDK 17 sería lo ideal)**.
 - Gradle 8.0 o superior.
 
 ## Configuración
